@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Whatsapp app</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bod {
+            background-color: seagreen;
+            width: 280px;
+            height: 500px;
+            border-radius: 40px;
+            border: 8px solid;
+            border-bottom: 20px solid;
+            border-color: black;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+
+        .bot {
+            background-color: seagreen;
+            width: 265px;
+            height: 50px;
+            margin-top: 1px;
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+        }
+
+        .first-btn {
+            border: none;
+            margin-top: 1px;
+            background-color: seagreen;
+            /* position: absolute; */
+        }
+
+        .second-btn {
+            border: none;
+            margin-top: 10px;
+            background-color: seagreen;
+        }
+
+        .third-btn {
+            border: none;
+            margin-top: 10px;
+            background-color: seagreen;
+        }
+
+        .fourth-btn {
+            border: none;
+            margin-top: 10px;
+            background-color: seagreen;
+        }
+
+        .sis {
+            width: 263px;
+            margin-left: -20px;
+            height: 362px;
+            background-color: tomato;
+            display: none;
+            margin-top: -400px;
+            position: absolute;
+            overflow-y: scroll;
+        }
+
+        .sis::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sic {
+            width: 264px;
+            margin-left: -87px;
+            height: 362px;
+            background-color: green;
+            display: none;
+            margin-top: -400px;
+            position: absolute;
+            overflow-y: scroll;
+        }
+
+        .sic::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sip {
+            width: 264px;
+            margin-left: -153px;
+            height: 362px;
+            background-color: green;
+            display: none;
+            margin-top: -400px;
+            position: absolute;
+            overflow-y: scroll;
+        }
+
+        .sip::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sie {
+            width: 264px;
+            margin-left: -220px;
+            height: 362px;
+            background-color: green;
+            display: none;
+            margin-top: -400px;
+            position: absolute;
+            overflow-y: scroll;
+        }
+
+        .sie::-webkit-scrollbar {
+            display: none;
+        }
+
+        .elip:focus-within .sis {
+            display: block;
+        }
+
+        .elip:focus-within .sic {
+            display: block;
+        }
+
+        .elip:focus-within .sip {
+            display: block;
+        }
+
+        .elip:focus-within .sie {
+            display: block;
+        }
+
+        .bus {
+            color: white;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-right: 70px;
+
+        }
+
+        .wa {
+            display: flex;
+            margin-top: 35px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .na {
+            float: right;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 60px;
+            cursor: pointer;
+        }
+
+        .lorem {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-color: green;
+            height: 362px;
+        }
+
+        .lorem::-webkit-scrollbar {
+            display: none;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .cert {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            height: 45px;
+            /* justify-content: space-around; */
+        }
+
+        .cert:hover {
+            background-color: seagreen;
+        }
+
+
+        .cerp {
+            margin-top: -10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 45px;
+            /* justify-content: space-around; */
+        }
+
+        .cerp:hover {
+            background-color: seagreen;
+        }
+
+
+        .cerd {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 45px;
+            /* justify-content: space-around; */
+        }
+
+        .cerd:hover {
+            background-color: seagreen;
+        }
+
+        .vero {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            margin-left: 20px;
+            margin-top: -10px;
+        }
+
+
+        .one {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: seagreen;
+            text-align: center;
+            /* align-items: center; */
+            color: white;
+            margin-top: -15px;
+            margin-left: 125px;
+        }
+
+        .one p {
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        .am {
+            font-size: 8px;
+            font-family: sans-serif;
+            font-weight: 200;
+            color: white;
+            margin-left: 100px;
+        }
+
+        .cal {
+            margin-left: 115px;
+            color: white;
+        }
+
+        .fit {
+            border: 5px solid;
+            border-color: seagreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* background-color: blue; */
+        }
+
+        .ats {
+            color: white;
+            margin-top: -5px;
+            position: absolute;
+        }
+
+        .out {
+            width: 100px;
+            height: 150px;
+            background-color: seagreen;
+            display: none;
+            margin-top: -1px;
+            position: absolute;
+            margin-left: -70px;
+        }
+
+        .out p {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            margin-top: 7px;
+        }
+
+
+        .out p:hover {
+            color: lightgreen;
+        }
+
+        .sym:focus-within .out {
+            display: block;
+        }
+
+
+        .sup {
+            display: flex;
+            height: 20px;
+        }
+
+
+        .sym button {
+            border: none;
+            background-color: seagreen;
+            color: white;
+        }
+
+        .was {
+            color: white;
+            margin-left: 0px;
+            margin-top: -18px;
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+
+        .wap {
+            color: white;
+            margin-left: 45px;
+            margin-top: -18px;
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+
+        .wat {
+            color: white;
+            margin-left: 0px;
+            margin-top: -18px;
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+
+        .wab {
+            color: white;
+            margin-left: 70px;
+            margin-top: -18px;
+            font-size: 12px;
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+
+
+        .ser {
+            font-size: 20px;
+        }
+
+
+        .cam {
+            font-size: 20px;
+        }
+
+
+        .ver {
+            font-size: 20px;
+        }
+
+
+        .all {
+            color: white;
+            font-size: 15px;
+            margin-top: -18px;
+            margin-left: 60px;
+        }
+
+
+        .rec {
+            color: white;
+            font-size: 15px;
+            margin-top: -18px;
+            margin-left: 60px;
+        }
+
+
+        .pm {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bod">
+        <div class="wa">
+            <h3 class="bus">WA Business</h3>
+            <nav class="na">
+                <span class="material-symbols-outlined cam">
+                    photo_camera
+                </span>
+<br>
+                <span class="material-symbols-outlined ser">
+                    search
+                </span>
+                <div class="sym">
+                    <button>
+                        <span class="material-symbols-outlined ver">
+                            more_vert
+                        </span>
+                    </button>
+
+                    <div class="out">
+                        <p>Advertise</p>
+                        <p>New group</p>
+                        <p>Communities</p>
+                        <p>Labels</p>
+                        <p>Business tools</p>
+                        <p>Settings</p>
+                    </div>
+                </div>
+                <!-- <span class="material-symbols-outlined">
+                    more_vert
+                </span> -->
+            </nav>
+        </div>
+        <div class="lorem">
+            <div class="cert">
+                <img src="certificate prog.jpg" alt="">
+                <p class="vero">veronica</p>
+                <h5 class="am">8:20 AM</h5>
+            </div>
+            <div class="sup">
+                <span class="material-symbols-outlined all">
+                    done_all
+                </span>
+                <h5 class="was">wassup</h5>
+                <div class="one">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div class="cerp">
+                <img src="certificate prog.jpg" alt="">
+                <p class="vero">Richi sqi</p>
+                <h5 class="am">8:20 AM</h5>
+            </div>
+            <div class="sup">
+                <span class="material-symbols-outlined all">
+                    done_all
+                </span>
+                <h5 class="was">wassup</h5>
+                <div class="one">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div class="cerp">
+                <img src="certificate prog.jpg" alt="">
+                <p class="vero">Mellanin</p>
+                <h5 class="am">8:20 AM</h5>
+            </div>
+            <div class="sup">
+                <span class="material-symbols-outlined all">
+                    done_all
+                </span>
+                <h5 class="was">wassup</h5>
+                <div class="one">
+                    <p>1</p>
+                </div>
+            </div>
+
+            <div class="cerp">
+                <img src="certificate prog.jpg" alt="">
+                <p class="vero">Samlarry</p>
+                <h5 class="am">8:20 AM</h5>
+            </div>
+            <div class="sup">
+                <span class="material-symbols-outlined all">
+                    done_all
+                </span>
+                <h5 class="was">wassup</h5>
+                <div class="one">
+                    <p>1</p>
+                </div>
+            </div>
+
+
+            <h1>
+                <div class="cerp">
+                    <img src="certificate prog.jpg" alt="">
+                    <p class="vero">mr moni</p>
+                    <h5 class="am">8:20 AM</h5>
+                </div>
+                <div class="sup">
+                    <span class="material-symbols-outlined all">
+                        done_all
+                    </span>
+                    <h5 class="was">wassup</h5>
+                    <div class="one">
+                        <p>1</p>
+                    </div>
+                </div>
+                <h1>
+
+                    <h1>
+                        <div class="cerp">
+                            <img src="certificate prog.jpg" alt="">
+                            <p class="vero">veronica</p>
+                            <h5 class="am">8:20 AM</h5>
+                        </div>
+                        <div class="sup">
+                            <span class="material-symbols-outlined all">
+                                done_all
+                            </span>
+                            <h5 class="was">wassup</h5>
+                            <div class="one">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <h1>
+
+                            <h1>
+                                <div class="cerp">
+                                    <img src="certificate prog.jpg" alt="">
+                                    <p class="vero">veronica</p>
+                                    <h5 class="am">8:20 AM</h5>
+                                </div>
+                                <div class="sup">
+                                    <span class="material-symbols-outlined all">
+                                        done_all
+                                    </span>
+                                    <h5 class="was">wassup</h5>
+                                    <div class="one">
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                                <h1>
+
+                                    <h1>
+                                        <div class="cerp">
+                                            <img src="certificate prog.jpg" alt="">
+                                            <p class="vero">veronica</p>
+                                            <h5 class="am">8:20 AM</h5>
+                                        </div>
+                                        <div class="sup">
+                                            <span class="material-symbols-outlined all">
+                                                done_all
+                                            </span>
+                                            <h5 class="was">wassup</h5>
+                                            <div class="one">
+                                                <p>1</p>
+                                            </div>
+                                        </div>
+                                        <h1>
+
+                                            <h1>
+                                                <div class="cerp">
+                                                    <img src="certificate prog.jpg" alt="">
+                                                    <p class="vero">veronica</p>
+                                                    <h5 class="am">8:20 AM</h5>
+                                                </div>
+                                                <div class="sup">
+                                                    <span class="material-symbols-outlined all">
+                                                        done_all
+                                                    </span>
+                                                    <h5 class="was">wassup</h5>
+                                                    <div class="one">
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <h1>
+
+                                                    <h1>
+                                                        <div class="cerp">
+                                                            <img src="certificate prog.jpg" alt="">
+                                                            <p class="vero">veronica</p>
+                                                            <h5 class="am">8:20 AM</h5>
+                                                        </div>
+                                                        <div class="sup">
+                                                            <span class="material-symbols-outlined all">
+                                                                done_all
+                                                            </span>
+                                                            <h5 class="was">wassup</h5>
+                                                            <div class="one">
+                                                                <p>1</p>
+                                                            </div>
+                                                        </div>
+                                                        <h1>
+
+                                                            <h1>
+                                                                <div class="cerp">
+                                                                    <img src="certificate prog.jpg" alt="">
+                                                                    <p class="vero">veronica</p>
+                                                                    <h5 class="am">8:20 AM</h5>
+                                                                </div>
+                                                                <div class="sup">
+                                                                    <span class="material-symbols-outlined all">
+                                                                        done_all
+                                                                    </span>
+                                                                    <h5 class="was">wassup</h5>
+                                                                    <div class="one">
+                                                                        <p>1</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <h1>
+
+        </div>
+        <div class="bot">
+            <!-- <div class="elip"> -->
+            <button class="first-btn">
+                <span class="material-symbols-outlined">
+                    chat
+                </span>
+                <p class="ats">chats</p>
+            </button>
+
+            <div class="elip">
+                <button class="second-btn">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <p class="ats">calls</p>
+                </button>
+                <div class="sic">
+                    <div class="cert">
+                        <img src="digital-literacy.jpg" alt="">
+                        <p class="vero">veronica</p>
+
+                        <span class="material-symbols-outlined cal">
+                            call
+                        </span>
+                    </div>
+                    <div class="pm">
+                        <span class="material-symbols-outlined rec">
+                            call_received
+                        </span>
+                        <h5 class="wat">september 26 1:49pm</h5>
+                    </div>
+
+                    <div class="cerd">
+                        <img src="digital-literacy.jpg" alt="">
+                        <p class="vero">Wizkidfc</p>
+
+                        <span class="material-symbols-outlined cal">
+                            video_call
+                        </span>
+                    </div>
+                    <div class="pm">
+                        <span class="material-symbols-outlined rec">
+                            call_received
+                        </span>
+                        <h5 class="wat">september 25 3:49pm</h5>
+                    </div>
+
+                    <div class="cerd">
+                        <img src="digital-literacy.jpg" alt="">
+                        <p class="vero">samlarry</p>
+
+                        <span class="material-symbols-outlined cal">
+                            call
+                        </span>
+                    </div>
+                    <div class="pm">
+                        <span class="material-symbols-outlined rec">
+                            call_received
+                        </span>
+                        <h5 class="wat">september 25 1:40pm</h5>
+                    </div>
+
+                    <div class="cerd">
+                        <img src="digital-literacy.jpg" alt="">
+                        <p class="vero">veronica</p>
+
+                        <span class="material-symbols-outlined cal">
+                            video_call
+                        </span>
+                    </div>
+                    <div class="pm">
+                        <span class="material-symbols-outlined rec">
+                            call_received
+                        </span>
+                        <h5 class="wat">september 25 1:15pm</h5>
+                    </div>
+
+                    <h1>
+                        <div class="cerd">
+                            <img src="digital-literacy.jpg" alt="">
+                            <p class="vero">veronica</p>
+
+                            <span class="material-symbols-outlined cal">
+                                video_call
+                            </span>
+                        </div>
+                        <div class="pm">
+                            <span class="material-symbols-outlined rec">
+                                call_received
+                            </span>
+                            <h5 class="wat">september 23 2:30pm</h5>
+                        </div>
+
+                        <h1>
+                            <h1>
+                                <div class="cerd">
+                                    <img src="digital-literacy.jpg" alt="">
+                                    <p class="vero">veronica</p>
+
+                                    <span class="material-symbols-outlined cal">
+                                        call
+                                    </span>
+                                </div>
+                                <div class="pm">
+                                    <span class="material-symbols-outlined rec">
+                                        call_received
+                                    </span>
+                                    <h5 class="wat">september 22 1:45am</h5>
+                                </div>
+
+                                <h1>
+                                    <h1>
+                                        <div class="cerd">
+                                            <img src="digital-literacy.jpg" alt="">
+                                            <p class="vero">veronica</p>
+
+                                            <span class="material-symbols-outlined cal">
+                                                video_call
+                                            </span>
+                                        </div>
+                                        <div class="pm">
+                                            <span class="material-symbols-outlined rec">
+                                                call_received
+                                            </span>
+                                            <h5 class="wat">september 20 1:50pm</h5>
+                                        </div>
+
+                                        <h1>
+                                            <h1>
+                                                <div class="cerd">
+                                                    <img src="digital-literacy.jpg" alt="">
+                                                    <p class="vero">veronica</p>
+                                                    <span class="material-symbols-outlined cal">
+                                                        call
+                                                    </span>
+                                                </div>
+                                                <div class="pm">
+                                                    <span class="material-symbols-outlined rec">
+                                                        call_received
+                                                    </span>
+                                                    <h5 class="wat">september 19 5:49pm</h5>
+                                                </div>
+
+                                                <h1>
+                                                    <h1>
+                                                        <div class="cerd">
+                                                            <img src="digital-literacy.jpg" alt="">
+                                                            <p class="vero">veronica</p>
+
+                                                            <span class="material-symbols-outlined cal">
+                                                                call
+                                                            </span>
+                                                        </div>
+                                                        <div class="pm">
+                                                            <span class="material-symbols-outlined rec">
+                                                                call_received
+                                                            </span>
+                                                            <h5 class="wat">september 18 12:19pm</h5>
+                                                        </div>
+
+                                                        <h1>
+                                                            <h1>
+                                                                <div class="cerd">
+                                                                    <img src="digital-literacy.jpg" alt="">
+                                                                    <p class="vero">veronica</p>
+
+                                                                    <span class="material-symbols-outlined cal">
+                                                                        call
+                                                                    </span>
+                                                                </div>
+                                                                <div class="pm">
+                                                                    <span class="material-symbols-outlined rec">
+                                                                        call_received
+                                                                    </span>
+                                                                    <h5 class="wat">september 16 1:49pm</h5>
+                                                                </div>
+
+                                                                <h1>
+                                                                    <h1>
+                                                                        <div class="cerd">
+                                                                            <img src="digital-literacy.jpg" alt="">
+                                                                            <p class="vero">veronica</p>
+
+                                                                            <span class="material-symbols-outlined cal">
+                                                                                call
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="pm">
+                                                                            <span class="material-symbols-outlined rec">
+                                                                                call_received
+                                                                            </span>
+                                                                            <h5 class="wat">september 15 7:39pm</h5>
+                                                                        </div>
+
+                                                                        <h1>
+                </div>
+            </div>
+
+            <div class="elip">
+                <button class="third-btn">
+                    <span class="material-symbols-outlined">
+                        update
+                    </span>
+                    <p class="ats">updates</p>
+                </button>
+                <div class="sip">
+                    <div class="cert">
+                        <div class="fit"><img src="product design.jpg" alt=""></div>
+                        <p class="vero">Samlarry</p>
+                    </div>
+                    <h5 class="wab"> just now</h5>
+
+                    <div class="cert">
+                        <div class="fit"><img src="product design.jpg" alt=""></div>
+                        <p class="vero">veronica</p>
+                    </div>
+                    <h5 class="wab"> 9 minutes ago</h5>
+
+                    <div class="cert">
+                        <div class="fit"><img src="product design.jpg" alt=""></div>
+                        <p class="vero">veronica</p>
+                    </div>
+                    <h5 class="wab"> 15 minutes ago</h5>
+
+                    <div class="cert">
+                        <div class="fit"><img src="product design.jpg" alt=""></div>
+                        <p class="vero">veronica</p>
+                    </div>
+                    <h5 class="wab"> 30 minutes ago</h5>
+
+                    <h1>
+                        <div class="cert">
+                            <div class="fit"><img src="product design.jpg" alt=""></div>
+                            <p class="vero">veronica</p>
+                        </div>
+                        <h5 class="wab"> 42 minutes ago</h5>
+                        <h1>
+
+                            <h1>
+                                <div class="cert">
+                                    <div class="fit"><img src="product design.jpg" alt=""></div>
+                                    <p class="vero">veronica</p>
+                                </div>
+                                <h5 class="wab"> 57 minutes ago</h5>
+                                <h1>
+
+                                    <h1>
+                                        <div class="cert">
+                                            <div class="fit"><img src="product design.jpg" alt=""></div>
+                                            <p class="vero">veronica</p>
+                                        </div>
+                                        <h1>
+                                            <h5 class="wab"> yesterday</h5>
+
+                                            <h1>
+                                                <div class="cert">
+                                                    <div class="fit"><img src="product design.jpg" alt=""></div>
+                                                    <p class="vero">veronica</p>
+                                                </div>
+                                                <h5 class="wab"> yesterday</h5>
+                                                <h1>
+
+                                                    <h1>
+                                                        <div class="cert">
+                                                            <div class="fit"><img src="product design.jpg" alt="">
+                                                            </div>
+                                                            <p class="vero">veronica</p>
+                                                        </div>
+                                                        <h5 class="wab"> yesterday</h5>
+                                                        <h1>
+
+                                                            <h1>
+                                                                <div class="cert">
+                                                                    <div class="fit"><img src="product design.jpg"
+                                                                            alt=""></div>
+                                                                    <p class="vero">veronica</p>
+                                                                </div>
+                                                                <h5 class="wab">yesterday</h5>
+                                                                <h1>
+
+                                                                    <h1>
+                                                                        <div class="cert">
+                                                                            <div class="fit"><img
+                                                                                    src="product design.jpg" alt="">
+                                                                            </div>
+                                                                            <p class="vero">veronica</p>
+                                                                        </div>
+                                                                        <h5 class="wab"> yesterday</h5>
+                                                                        <h1>
+                </div>
+            </div>
+
+            <div class="elip">
+                <button class="fourth-btn">
+                    <span class="material-symbols-outlined">
+                        house
+                    </span>
+                    <p class="ats">Tools</p>
+                </button>
+                <div class="sie">
+                    <div class="cert">
+                        <span class="material-symbols-outlined">
+                            house
+                        </span>
+                        <p class="vero">Profile</p>
+                    </div>
+                    <h5 class="wap">Manage address,hours,and websites</h5>
+
+                    <div class="cert">
+                        <span class="material-symbols-outlined">
+                            verified
+                        </span>
+                        <p class="vero">Meta Verified</p>
+                    </div>
+                    <h5 class="wap">Show that your profile is verified</h5>
+
+                    <div class="cert">
+                        <span class="material-symbols-outlined">
+                            grid_on
+                        </span>
+                        <p class="vero">Catalog</p>
+                    </div>
+                    <h5 class="wap">Show products and services</h5>
+
+                    <div class="cert">
+                        <span class="material-symbols-outlined">
+                            campaign
+                        </span>
+                        <p class="vero">Advertise</p>
+                    </div>
+                    <h5 class="wap">Create ads lead to whatsapp</h5>
+
+                    <h1>
+                        <div class="cert">
+                            <span class="material-symbols-outlined">
+                                chat
+                            </span>
+                            <p class="vero">Greeting message</p>
+                        </div>
+                        <h5 class="wap">Welcome new cutomers automatically</h5>
+                        <h1>
+
+                            <h1>
+                                <div class="cert">
+                                    <span class="material-symbols-outlined">
+                                        beach_access
+                                    </span>
+                                    <p class="vero">Away message</p>
+                                </div>
+                                <h5 class="wap">Reply automatically when you're away</h5>
+                                <h1>
+
+                                    <h1>
+                                        <div class="cert">
+                                            <span class="material-symbols-outlined">
+                                                bolt
+                                            </span>
+                                            <p class="vero">Quick replies</p>
+                                        </div>
+                                        <h5 class="wap">
+                                            
+                                            
+                                            Reuse frequent messages</h5>
+                                        <h1>
+
+                                            <h1>
+                                                <div class="cert">
+                                                    <span class="material-symbols-outlined">
+                                                        label
+                                                    </span>
+                                                    <p class="vero">Labels</p>
+                                                </div>
+                                                <h5 class="wap">Organise chats and customers</h5>
+                                                <h1>
+
+                                                    <h1>
+                                                        <div class="cert">
+                                                            <span class="material-symbols-outlined">
+                                                                help
+                                                            </span>
+                                                            <p class="vero">Help center</p>
+                                                        </div>
+                                                        <h5 class="wap">Get help,contact us</h5>
+                                                        <h1>
+
+                                                            <h1>
+                                                                <div class="cert">
+                                                                    <span class="material-symbols-outlined">
+                                                                        settings
+                                                                    </span>
+                                                                    <p class="vero">Settings</p>
+
+
+                                                                </div>
+                                                                <h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

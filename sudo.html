@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        /* padding: 0; */
+        box-sizing: border-box;
+    }
+    lo::first-letter{
+         font-size: 40px;
+         font-weight: 900;
+         color: tomato;
+         font-style: oblique;
+    }
+    .line::first-line{
+  font-size: 30px;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+    }
+    ::marker{
+        color: green;
+    }
+
+    input::placeholder{
+        color: red;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    .show::before{
+content: url(product\ design.jpg);
+    }
+    .name::before{
+        content: 'jidex ';
+    }
+    .name::after{
+        content: ' oguns';
+    }
+    .many div:nth-child(odd){
+        background-color: chocolate;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .many div:nth-child(even){
+        background-color: chocolate;
+        width: 200px;
+        height: 200px;
+        /* border-radius: 50%; */
+    }
+    .may div:nth-child(odd){
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        border-radius: 30%;
+    }
+
+</style>
+</head>
+<body>
+    <h1 class="lo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <div class="line">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+        </div>
+        <div>
+            <ul>
+                <li>igbo</li>
+                <li>cana</li>
+                <li>backwood</li>
+                <li>client</li>
+            </ul>
+            <ol>
+                <li>igbo</li>
+                <li>cana</li>
+                <li>backwood</li>
+                <li>client</li>
+            </ol>
+        </div>
+
+        <input type="text" placeholder="Email-address">
+        <div class="show">implementation</div>
+        <div class="name">jaybee</div>
+
+        <div class="many">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div class="may">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+</body>
+</html>
